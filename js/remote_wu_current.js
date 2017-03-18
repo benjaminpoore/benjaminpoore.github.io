@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
 
                     cityDisplay.text(location);
 
-                    cityDisplayTitle.text(location + " - Weather Home");
+                    cityDisplayTitle.text(location + " - SunShower Weather");
 
                     wind_mph.text(windMPH + "mph Wind");
                     wind_dir.text(windDir + " Direction");
