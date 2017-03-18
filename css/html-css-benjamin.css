@@ -1,0 +1,444 @@
+@media only screen and (min-width: 0px) {
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+    #logo {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+    }
+    #name {margin: auto;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    }
+    #name_desktop {
+        text-decoration: none;
+    }
+
+    #menu {margin: auto;}
+    #page-header-div {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        text-align: center;
+
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex-shrink: 2;
+        border:2px solid;
+        justify-content: space-around;
+        font-size: 8pt;
+    }
+
+    #page-search {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #advertisement_desktop {
+        display: none;
+    }
+
+body{
+    background-color: grey;
+    margin: 1%;
+    padding: 0;
+    font-size: 24pt;
+    font-size: 1em;
+    font-family: arial, "arial thin", sans-serif;
+    text-align: center;
+    margin-left: .5%;
+    margin-right: .5%;
+    height: auto;
+    width: auto;
+}
+
+    #city-date {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #current_div {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 11pt;
+        text-align: center;
+        list-style: none;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border:2px solid;
+        height: 220px;
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+    #current {
+        list-style: none;
+        margin-left: -4em;
+    }
+    #hi-lo{
+        list-style: none;
+        order: 1;
+        align-content: center;
+    }
+
+#wrapper{
+    width: 100%;
+    float: none;
+    clear: right;
+}
+
+#advertisement {
+    background-color: cornflowerblue;
+    border: 2px groove black;
+    position: static;
+    float: right;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+    #advertisement-tablet{
+       display: none;
+    }
+    #hourly-weather-desktop {
+        margin-left: auto;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        position: static;
+        float: right;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: inline;
+    }
+  #hourly-weather {
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        position: static;
+        float: right;
+        width: 100%;
+        list-style: none;
+        text-align: center;
+        vertical-align: top;
+        display: none;
+    }
+
+    /* Sketches */
+
+    #phone {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+    #tablet {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: none;
+    }
+    #desktop {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: none;
+    }
+
+    #current_weather_sunny {
+        display: none;
+    }
+
+    #map {
+        display: none;
+    }
+
+}
+/* Medium (tablet) sized screen*/
+@media only screen and (min-width: 600px) {
+
+    body {
+        background-color: yellow;
+    }
+
+    #name {margin: auto;
+        margin-top: auto;
+    }
+    #name_desktop {
+        text-decoration: none;
+    }
+
+    #page-search {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: justify;
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #menu {margin: auto;
+    margin-bottom: .5em;
+    }
+
+    #hourly-weather {
+        display: none;
+    }
+
+    #current_div {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: center;
+        list-style: none;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border: 2px solid;
+        height: 280px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #current-condition {
+        margin-top: 1em;
+        margin-left: auto;
+        order: 1;
+    }
+
+    #hi-lo {
+        font-size: 16pt;
+        order: 2;
+    }
+
+    #advertisement-tablet{
+        list-style: none;
+        order: 3;
+        align-content: center;
+        display: block;
+    }
+
+    #advertisement {
+        display: none;
+    }
+
+    #phone2 {
+        display: none;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #desktop2 {
+        display: none;
+    }
+    #tablet2 {
+        width: auto;
+        height: 180px;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+}
+
+#menu,#name {
+    font-size: 20pt;
+}
+
+#name_desktop{
+    font-size: 25pt;
+}
+
+/* Large (Desktop) sized screen*/
+@media only screen and (min-width: 1024px) {
+
+
+    #page-search {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    #city-date {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 20pt;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border:2px solid;
+        justify-content: center;
+    }
+
+    body {
+        background-color: green;
+    }
+
+    #phone1 {
+        display: none;
+    }
+    #tablet1 {
+        display: none;
+    }
+    #tablet {
+        display: none;
+    }
+    #desktop1 {
+        max-width: 100%;
+        vertical-align: middle;
+        border: 0;
+        display: inline-block;
+    }
+
+    #hourly-weather {
+        display: none;
+    }
+
+    #advertisement-tablet {
+    display: none;
+}
+
+    #advertisement
+    {
+        display: none;
+    }
+
+    #current_div {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 16pt;
+        text-align: center;
+        list-style: none;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        border:2px solid;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #current-conditions {
+        font-size: 12pt;
+        order: 1;
+    }
+
+    #hi-lo {
+        font-size: 18pt;
+        order: 2;
+    }
+
+    #map{
+        list-style: none;
+        order: 3;
+        align-content: center;
+        display: block;
+    }
+
+    #map_pic {
+        margin: 1%;
+        width: 480px;
+    }
+
+    #name_desktop{
+        font-size: 20pt;
+    }
+
+    #desktop_final {
+        margin: .5%;
+        background-color: cornflowerblue;
+        border: 2px groove black;
+        font-size: 12pt;
+        text-align: center;
+        list-style: none;
+
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        border: 2px solid;
+        height: 330px;
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    #hourly-weather-desktop {
+        margin: .5%;
+        width: 400px;
+        display: inline-block;
+        order: 2;
+    }
+
+    #current_weather_sunny {
+        margin: .5%;
+        display: inline-block;
+        width: 280px;
+        order: 1;
+    }
+    #current_weather_rainy {
+        margin: .5%;
+        display: inline-block;
+        width: 280px;
+        order: 1;
+    }
+    #current_weather_sunny1 {
+        width: 280px;
+    }
+    #advertisement_desktop {
+        margin: .5%;
+        display: block;
+        width: 270px;
+        order: 3;
+    }
+
