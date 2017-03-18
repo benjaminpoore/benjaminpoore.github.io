@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
 
                     var cityDisplay = $('#cityDisplay');
 
-                    var currentTemp = $('#currentTemp');
+                    var currentTemp = $('#currentTemp').html(Math.round(temp_f) + " &deg;" +"F");
 
 
                     var summary = $('#summary');
@@ -59,7 +59,6 @@ jQuery(document).ready(function ($) {
                     //below
 
                     summary.text(weather_summary);
-                    currentTemp.text(Math.round(temp_f) + "°F");
 
                     cityDisplay.text(location);
 
