@@ -101,8 +101,9 @@ function getData(add) {
                     }); // end keyup
 
 $("searchResults").on("click", "a", function (evt) {
-
+    evt.currentTarget();
     evt.preventDefault();
+    evt.isDefaultPrevented();
     var jsonCity = $(this).text();
     console.log(jsonCity);
     index = $(this).index("a");
