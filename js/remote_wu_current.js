@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
         // Get the data from the wunderground API
         function getData(lat, long){
             $.ajax({
-                url: "http://api.wunderground.com/api/8aea174dc9748d34/conditions/geolookup/q/autoip.json",
+                url: "https://api.wunderground.com/api/8aea174dc9748d34/conditions/geolookup/q/autoip.json",
 
                 dataType: "jsonp",
                 success: function (data) {
