@@ -90,10 +90,10 @@ function getData(add) {
                                     output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                                     output += '</li>';
                                 }
-
+                                $("#searchResults").html(output); // send results to the page
                             }); // end each
                             output += '</ol>';
-                          $("#searchResults").html(output); // send results to the page
+
 //                        document.getElementById("searchResults").style.display = "inline";
 //                            //?????
 
