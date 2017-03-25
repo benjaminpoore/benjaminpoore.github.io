@@ -80,7 +80,6 @@ function getData(add) {
                         $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
                             console.log(data); // test for JSON received
 
-
                             // Build output
                             global = data;
                             var output = '<ol>';
@@ -90,9 +89,10 @@ function getData(add) {
                                     output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                                     output += '</li>';
                                 }
-                                $("#searchResults").html(output); // send results to the page
+
                             }); // end each
                             output += '</ol>';
+                            $("#searchResults").html(output); // send results to the page
 
 //                        document.getElementById("searchResults").style.display = "inline";
 //                            //?????
@@ -101,9 +101,9 @@ function getData(add) {
                     }); // end keyup
 
 $("searchResults").on("click", "a", function (evt) {
-    evt.currentTarget();
+
     evt.preventDefault();
-    evt.isDefaultPrevented();
+
     var jsonCity = $(this).text();
     console.log(jsonCity);
     index = $(this).index("a");
