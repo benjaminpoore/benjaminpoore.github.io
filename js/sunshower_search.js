@@ -94,8 +94,8 @@ function getData(add) {
                             }); // end each
                             output += '</ol>';
                           $("#searchResults").html(output); // send results to the page
-                        document.getElementById("searchResults").style.display = "inline";
-                            //?????
+//                        document.getElementById("searchResults").style.display = "inline";
+//                            //?????
 
                         }); // end getJSON
                     }); // end keyup
