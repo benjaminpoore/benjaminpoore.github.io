@@ -39,7 +39,7 @@ function getData(add) {
             var HIGH = $('#high');
             var LOW = $('#low');
 
-            HIGH.text("HIGH" + " " + high + " &deg;" + "F);
+            HIGH.text("HIGH" + " " + high + " &deg;" + "F");
             LOW.text("LOW" + " " + low + "&deg;" + "F");
 
             // Above
