@@ -91,9 +91,9 @@ function getData(add) {
                             }); // End each
                             output += '</ol>';
                             $("#work").html(output); // send results to the page
-                            document.getElementById("work").style.display = "inline";
-                            $("#searchResults").html(output); // send results to the page
-                            document.getElementById("searchResults").style.display = "inline";
+//                            document.getElementById("work").style.display = "inline";
+//                            $("#searchResults").html(output); // send results to the page
+//                            document.getElementById("searchResults").style.display = "inline";
                         }); // end getJSON
                     }); // end onkeyup
 
@@ -108,7 +108,7 @@ $("#work").on("click", "a", function (evt) {
 
     getData(global.RESULTS[index].zmw);
 
-    document.getElementById("searchResults").style.display = "none";
+    document.getElementById("work").style.display = "none";
 
 });
 // Get menu clicks
