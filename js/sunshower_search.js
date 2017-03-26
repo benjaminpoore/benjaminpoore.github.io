@@ -92,7 +92,7 @@ function getData(add) {
                             output += '</ol>';
                             $("#work").html(output); // send results to the page
 //                            document.getElementById("work").style.display = "inline";
-//                            $("#searchResults").html(output); // send results to the page
+//                            $("#work").html(output); // send results to the page
 //                            document.getElementById("searchResults").style.display = "inline";
                         }); // end getJSON
                     }); // end onkeyup
