@@ -91,12 +91,27 @@ function getData(add) {
                                 }
                             }); // End each
                             output += '</ol>';
+                            $("#work").html(output); // send results to the page
+                            document.getElementById("work").style.display = "inline";
                             $("#searchResults").html(output); // send results to the page
                             document.getElementById("searchResults").style.display = "inline";
                         }); // end getJSON
                     }); // end onkeyup
 
+// Get menu clicks
+$("#work").on("click", "a", function (evt) {
+    evt.preventDefault();
+    var jsonCity = $(this).text(); // City..
+    console.log(jsonCity);
+    index = $(this).index("a");
+    global_city = $(this).text();
+    console.log(global_city + " is the real city");
 
+    getData(global.RESULTS[index].zmw);
+
+    document.getElementById("searchResults").style.display = "none";
+
+});
 // Get menu clicks
 $("#searchResults").on("click", "a", function (evt) {
     evt.preventDefault();
