@@ -97,28 +97,28 @@ function getData(add) {
                         }); // end getJSON
                     }); // end onkeyup
 
-//// Get menu clicks
-//$("#work").on("click", "a", function (evt) {
-//    evt.preventDefault();
-//    var jsonCity = $(this).text(); // City..
-//    console.log(jsonCity);
-//    index = $(this).index("a");
-//    global_city = $(this).text();
-//    console.log(global_city + " is the real city");
-//
-//    getData(global.RESULTS[index].zmw);
-//
-//    document.getElementById("searchResults").style.display = "none";
-//
-//});
 // Get menu clicks
-$("#searchResults").on("click", "a", function (evt) {
+$("#work").on("click", "a", function (evt) {
     evt.preventDefault();
     var jsonCity = $(this).text(); // City..
     console.log(jsonCity);
     index = $(this).index("a");
     global_city = $(this).text();
     console.log(global_city + " is the real city");
+
+    getData(global.RESULTS[index].zmw);
+
+    document.getElementById("searchResults").style.display = "none";
+
+});
+// Get menu clicks
+//$("#searchResults").on("click", "a", function (evt) {
+//    evt.preventDefault();
+//    var jsonCity = $(this).text(); // City..
+//    console.log(jsonCity);
+//    index = $(this).index("a");
+//    global_city = $(this).text();
+//    console.log(global_city + " is the real city");
 
 
 //    var attempt_lat = global.RESULTS[index].zmw;
@@ -129,13 +129,13 @@ $("#searchResults").on("click", "a", function (evt) {
 //    //    console.log(together);
 //
 //    getData(attempt_lat)
-
-    getData(global.RESULTS[index].zmw);
-
-
-  document.getElementById("searchResults").style.display = "none";
-
-});
+//
+//    getData(global.RESULTS[index].zmw);
+//
+//
+//  document.getElementById("searchResults").style.display = "none";
+//
+//});
 
         // A function for changing a string to TitleCase
         function toTitleCase(str) {
