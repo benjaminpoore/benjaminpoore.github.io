@@ -9,8 +9,8 @@ function getData(add) {
         dataType: "jsonp",
         success: function (data) {
             console.log(data);
-            var location = data.location.city + ", " + data.location.state;
-
+//            var location = data.location.city + ", " + data.location.state;
+            var location = global_city;
             var temp_f = data.current_observation.temp_f;
 
             var weather_summary = data.current_observation.weather;
