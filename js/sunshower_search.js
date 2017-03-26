@@ -31,8 +31,7 @@ function getData(add) {
 
             var currentTemp = $('#currentTemp').html(Math.round(temp_f) + " &deg;" + "F");
 
-            $("#high").html("HIGH" + high + " &deg;" + "F");
-            $("#low").html("LOW" + low + " &deg;" + "F");
+
 
             var summary = $('#summary');
             var wind_mph = $('#wind_mph');
@@ -40,8 +39,8 @@ function getData(add) {
             var HIGH = $('#high');
             var LOW = $('#low');
 
-            HIGH.text("HIGH" + high);
-            LOW.text("LOW" + low);
+            HIGH.text("HIGH" + " " + high + " &deg;" + "F);
+            LOW.text("LOW" + " " + low + "&deg;" + "F");
 
             // Above
 
@@ -98,20 +97,20 @@ function getData(add) {
                         }); // end getJSON
                     }); // end onkeyup
 
-// Get menu clicks
-$("#work").on("click", "a", function (evt) {
-    evt.preventDefault();
-    var jsonCity = $(this).text(); // City..
-    console.log(jsonCity);
-    index = $(this).index("a");
-    global_city = $(this).text();
-    console.log(global_city + " is the real city");
-
-    getData(global.RESULTS[index].zmw);
-
-    document.getElementById("searchResults").style.display = "none";
-
-});
+//// Get menu clicks
+//$("#work").on("click", "a", function (evt) {
+//    evt.preventDefault();
+//    var jsonCity = $(this).text(); // City..
+//    console.log(jsonCity);
+//    index = $(this).index("a");
+//    global_city = $(this).text();
+//    console.log(global_city + " is the real city");
+//
+//    getData(global.RESULTS[index].zmw);
+//
+//    document.getElementById("searchResults").style.display = "none";
+//
+//});
 // Get menu clicks
 $("#searchResults").on("click", "a", function (evt) {
     evt.preventDefault();
