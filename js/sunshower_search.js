@@ -86,25 +86,21 @@ function getData(add) {
                             $.each(data.RESULTS, function (key, val) {
                                 if (val.name.search(rExp) != -1) {
                                     output += '<li>';
-                                    output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                                    output += '<a href="https://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                                     output += '</li>';
                                 }
-
-                            }); // end each
+                            }); // End each
                             output += '</ol>';
                             $("#searchResults").html(output); // send results to the page
-
-//                        document.getElementById("searchResults").style.display = "inline";
-//                            //?????
-
+                            document.getElementById("searchResults").style.display = "inline";
                         }); // end getJSON
-                    }); // end keyup
+                    }); // end onkeyup
 
-$("searchResults").on("click", "a", function (evt) {
 
+// Get menu clicks
+$("#searchResults").on("click", "a", function (evt) {
     evt.preventDefault();
-
-    var jsonCity = $(this).text();
+    var jsonCity = $(this).text(); // City..
     console.log(jsonCity);
     index = $(this).index("a");
     global_city = $(this).text();
