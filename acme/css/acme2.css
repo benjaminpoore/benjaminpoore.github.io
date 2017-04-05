@@ -1,0 +1,468 @@
+/********************************
+* Default Styles - Mobile First
+********************************/
+
+@media only screen and (min-width: 0px) {
+    * {
+        box-sizing: border-box;
+    }
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    #menu {
+        margin: auto;
+    }
+    a:hover {
+        background-color: lightblue;
+    }
+    body {
+        width: 100%;
+        border-image-width: 100%;
+        background-image: url(../images/site/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: left;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.0em;
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        padding-left: .75em;
+        padding-right: .75em;
+        overflow: hidden;
+    }
+    body,
+    caption,
+    th,
+    td,
+    input,
+    textarea,
+    select,
+    option,
+    legend,
+    fieldset,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size-adjust: .5;
+    }
+    h1 {
+        font-size: 1.8em;
+        margin: .25em;
+    }
+    /*******************************
+* Page Header Styles
+* Background Image
+*******************************/
+    .page-header {
+        background-color: white;
+        border: 2px groove black;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        border: 2px solid;
+        justify-content: space-around;
+        font-size: 8pt;
+        width: 100%;
+        height: 150px;
+        background-image: url(../images/site/logo.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    /*******************************
+* Page Navigation Styles
+*******************************/
+    .page-nav {
+        background-color: red;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+    .page-nav ul {
+        display: flex;
+        align-items: stretch;
+        height: 4em;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .page-nav li {
+        background-color: red;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        font-size: calc(3px + 3vw);
+    }
+    .page-nav a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    /********************************
+* Main Content Styles
+********************************/
+    .main-title {
+        text-align: left;
+        font-size: calc(10pt + 4vw);
+    }
+    .main {
+        width: 100%;
+        background-color: white;
+        line-height: 1.25;
+        margin: 0 auto;
+        position: relative;
+    }
+    /********************************
+* Home Content Styles
+********************************/
+    #home-content {}
+    #featured-image-box {
+        width: calc(98% + 1vw);
+        height: calc(1px + 40vw);
+        max-height: 300px;
+        margin-left: .5em;
+        padding-right: .5em;
+    }
+    .featured-image {
+        display: block;
+        background-image: url(../images/site/feature.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        min-width: 10em;
+    }
+    .featured-image img {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+    #actionbtn {
+        width: calc(55px + 20vw);
+        height: calc(6px + 8vw);
+    }
+    #home-content-rocket {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1em;
+        border-top: 5em;
+        font-size: calc(2.8pt + 2vw);
+        color: darkred;
+        list-style-type: none;
+    }
+    /*  END ROCKET  */
+    #recipes-titles {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .5em;
+        margin-right: -1em;
+        font-size: calc(2pt + 3vw);
+    }
+    #recipes-titles h2 {}
+    /*  END RECIPES-TITLES  */
+    #recipes-reviews {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .5em;
+        margin-right: 5em;
+        height: 100%;
+        width: 100%;
+        padding-bottom: .5em;
+        font-size: calc(5pt + 3vw);
+    }
+    #home-content-recipes {
+        display: flex;
+        flex-flow: column;
+        flex-wrap: wrap;
+        order: 0;
+        width: 100%;
+    }
+    .home-content-containers {
+        text-align: center;
+        width: 100%;
+        padding-top: .5em;
+        margin: .5%;
+    }
+    .recipes-images-box {
+        background-color: darkgrey;
+        width: 5em;
+    }
+    .recipes-a {
+        display: block;
+        text-align: left;
+    }
+    #home-content-reviews {
+        order: 1;
+        width: 180%;
+        margin-right: 1em;
+        line-height: 2em;
+    }
+    /********************************
+    * Product Content Styles
+    ********************************/
+    #product-name {
+        font-size:calc(10px + 4vw);
+        display: none;
+    }
+    #product-content {
+        display: flex;
+        display: none;
+    }
+    #product-content-box0 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-right: .75em;
+        margin-left: .75em;
+    }
+    #product-content-box1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: -.5em;
+        justify-content: space-between;
+        font-family: serif;
+    }
+    #product-path-section {
+        padding-top: 1em;
+        order: 1;
+        width: 170%;
+        margin-right: .5em;
+    }
+    #product-picture {
+        object-fit: contain;
+        object-position: top;
+        width: 100%;
+        max-width: 35em;
+        min-width: 9em;
+        height: 100%;
+        max-height: 35em;
+    }
+    #product-manufacturer,
+    #product-reviews,
+    #product-description {
+        display: flex;
+        font-size: calc(8px + 2vw);
+        display: flex;
+        order: 0;
+        width: 100%;
+    }
+    #product-price {
+        display: flex;
+        order: 3;
+        color: red;
+        font-size: 7vw;
+    }
+    /*******************************
+* Page Footer Styles
+*******************************/
+    .page-footer {
+        background-color: white;
+        text-align: center;
+        border-style: solid;
+        border-bottom: 2px;
+        border-left: none;
+        border-right: none;
+        border-color: black;
+        padding-top: .5em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media (min-width: 42.67em) {
+    #featured-image-box {
+        width: calc(98% + 1vw);
+        height: calc(2px + 100vw);
+        max-height: calc(100px + 30vw);
+        margin-left: .5em;
+        padding-right: .5em;
+    }
+    .featured-image {
+        display: block;
+        background-image: url(../images/site/feature.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        min-width: 10em;
+    }
+    .featured-image img {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+    #actionbtn {
+        width: calc(55px + 30vw);
+        height: calc(6px + 10vw);
+    }
+    #home-content-rocket {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1em;
+        border-top: 5em;
+        font-size: calc(2.8pt + 3vw);
+        color: darkred;
+        list-style-type: none;
+    }
+    /*  END ROCKET  */
+    #recipes-titles {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .5em;
+        margin-right: 1em;
+        font-size: calc(5pt + 2vw);
+    }
+    /*  END RECIPES-TITLES  */
+    #recipes-reviews {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .5em;
+        margin-right: 5em;
+        height: 100%;
+        width: 100%;
+        padding-bottom: .5em;
+        font-size: calc(5pt + 2vw);
+    }
+    #home-content-recipes {
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+    }
+    .home-content-containers {
+        text-align: center;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .recipes-images-box {
+        background-color: darkgrey;
+        width: 4em;
+        margin: auto;
+        justify-content: center;
+    }
+    .recipes-a {
+        display: block;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #home-content-reviews {
+        order: 1;
+        width: 180%;
+        margin-right: 1em;
+    }
+}
+
+
+/*  LARGE SCREEN @MEDIA  */
+
+@media (min-width: 70.67em) {
+    #featured-image-box {
+        width: calc(98% + 1vw);
+        height: calc(2px + 100vw);
+        max-height: calc(100px + 30vw);
+        margin-left: .5em;
+        padding-right: .5em;
+    }
+    .featured-image {
+        display: block;
+        background-image: url(../images/site/feature.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        min-width: 10em;
+    }
+    .featured-image img {
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+    #actionbtn {
+        width: calc(55px + 30vw);
+        height: calc(4px + 9vw);
+    }
+    #home-content-rocket {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 1em;
+        border-top: 5em;
+        font-size: calc(2.8pt + 3vw);
+        color: darkred;
+        list-style-type: none;
+    }
+    /*  END ROCKET  */
+    #recipes-titles {
+        display: flex;
+        justify-content: space-between;
+        margin-left: .5em;
+        margin-right: 2em;
+        font-size: calc(1pt + 2.5vw);
+    }
+    /*  END RECIPES-TITLES  */
+    #recipes-reviews {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-left: .5em;
+        margin-right: 5em;
+        height: 100%;
+        width: 100%;
+        padding-bottom: .5em;
+        font-size: calc(10pt + 1vw);
+    }
+    #home-content-recipes {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        order: 0;
+        width: 200%;
+    }
+    .recipes-images {
+        width: 5em;
+    }
+    .home-content-containers {
+        flex-direction: row;
+        width: 40%;
+        padding-top: .5em;
+        margin: .5%;
+    }
+    .recipes-images-box {
+        background-color: darkgrey;
+        width: 8em;
+        margin: auto;
+    }
+    .recipes-a {
+        display: block;
+        text-align: center;
+    }
+    #home-content-reviews {
+        order: 1;
+        width: 180%;
+        margin-right: 1em;
+    }
+    .page-footer {
+        font-size: calc(4pt + 1vw);
+    }
+}
