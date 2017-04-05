@@ -1,0 +1,12 @@
+{
+    "Home":{},
+    "Anvils":{
+
+        "name": "Anvil",
+        "path": "/acme/images/products/anvil.png",
+        "description": "Our 55 lb. hardened steel anvil is great for dropping from heights or placing in the way to block a roadrunner from taking a path. This anvil will take a pounding and keep on being useful for years.",
+        "manufacturer": "Anvil Forge",
+        "price": "50.00",
+        "reviews": "4.5"
+    }
+}
