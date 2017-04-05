@@ -120,10 +120,6 @@
         text-align: left;
         font-size: calc(10pt + 4vw);
     }
-    #main-title {
-        text-align: left;
-        font-size: calc(10pt + 4vw);
-    }
     .main {
         width: 100%;
         background-color: white;
