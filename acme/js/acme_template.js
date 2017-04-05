@@ -43,7 +43,7 @@ $("#page-nav").on("click", "a", function (evt) {
 
 
 // display toggle of home-content and product-content
-        document.getElementById('home-content').style.display='inline';document.getElementById('product-content').style.display='none';
+//        document.getElementById('home-content').style.display='inline';document.getElementById('product-content').style.display='none';
     }
 
     else {
@@ -55,8 +55,8 @@ $("#page-nav").on("click", "a", function (evt) {
       var nameDisplayTitle = $('#nameDisplayTitle');
       nameDisplayTitle.text(global_clicked + " - Acme");
 // display toggle of home-content and product-content
-        document.getElementById('home-content').style.display='none';
-        document.getElementById('product-content').style.display='inline';
+//        document.getElementById('home-content').style.display='none';
+//        document.getElementById('product-content').style.display='inline';
 
 
         var name_of = jsonData[global_clicked].name;
@@ -76,13 +76,13 @@ $("#page-nav").on("click", "a", function (evt) {
 var name = $('#product-name').text(name_of);
 
 
-document.getElementById('product-path-section').innerHTML = '<img id="product-picture" alt="Given Product Image" src="' + path_of + '" />';
-var description = $('#product-description').text(description_of);
-
-var manufacturer = $('#product-manufacturer').text("MADE BY: " + manufacturer_of);
-
-var price = $('#product-price').text("PRICE: $" + price_of);
-var reviews = $('#product-reviews').text("REVIEWS: " + reviews_of + "/5 stars");
+//document.getElementById('product-path-section').innerHTML = '<img id="product-picture" alt="Given Product Image" src="' + path_of + '" />';
+//var description = $('#product-description').text(description_of);
+//
+//var manufacturer = $('#product-manufacturer').text("MADE BY: " + manufacturer_of);
+//
+//var price = $('#product-price').text("PRICE: $" + price_of);
+//var reviews = $('#product-reviews').text("REVIEWS: " + reviews_of + "/5 stars");
     }
 
 });
