@@ -5,7 +5,7 @@ console.log(".js is working");
 
 // get json
 
-$.getJSON("/benjaminpoore4.github.io/acme/js/acme.json", function (data) {
+$.getJSON("acme.json", function (data) {
     jsonData = data;
     console.log(jsonData)
     console.log(jsonData.Anvils)
